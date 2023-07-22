@@ -446,6 +446,183 @@
       font-size: small;
       text-align: center;
     }
+    .pr2{
+    font-size: small;
+    position: relative;
+    top: -25px;
+    left: 190px;
+    font-weight: bold;
+    color: hsl(243, 100%, 62%);
+}
+    @media(max-width:375px){
+      .maindiv{
+        flex-direction: column;
+        width: 370px;
+        padding: 0;
+        height: 480px;
+      }
+      .div1{
+        padding: 50px;
+        flex-direction: row;
+        background-image: url(/assets/images/bg-sidebar-mobile.svg);
+        width: auto;
+        background-size: cover;
+      }
+      .step{
+        display: none;
+      }
+      .step1{
+        display: none;
+      }
+      .item2{
+        margin-left: 10px;
+        position: relative;
+        top: -45px;
+        left: 51px;
+      }
+      body{
+        margin: -80px;
+      }
+      .section1-main{
+        position: relative;
+        top: -55px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        margin-left: 15px;
+        width: 330px;
+        padding: 10px;
+        height: 340px;
+      }
+      .form1{
+        width: 300px;
+      }
+      .div3{
+        margin-top: -5px;
+      }
+      #submit1{
+        top: -50px;
+        left: 267px;
+        margin-top: 0;
+      }
+      .section1{
+        background-color: hsl(231, 100%, 99%);
+      }
+      .div2{
+        width: auto;
+        margin-left: 0;
+        position: relative;
+        padding: 0;
+        background-color: hsl(231, 100%, 99%);;
+      }
+      .price{
+        flex-direction: column;
+        position: relative;
+        top: -22px;
+      }
+      .price1{
+        position: relative;
+        top: 10px;
+        height: 55px;
+        width: 300px;
+      }
+      .sub-price1{
+       top: -37px;
+       left: 45px;
+      }
+      .sub-price2{
+        top: -8px;
+        width: 300px;
+      }
+      .button{
+        position: relative;
+        top: -40px;
+      }
+      .section2-main{
+        position: relative;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        margin-left: 15px;
+        width: 330px;
+        padding: 10px;
+        height: 340px;
+      }
+      label{
+        margin-top: 0;
+      }
+      .actionBtn{
+        margin-top: 0;
+      }
+      .moveBtn{
+        margin-top: 0;
+        top: 7px;
+      }
+      .section3-main{
+        position: relative;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        top: 15px;
+        width: 330px;
+        padding: 10px;
+        height: 340px;
+      }
+      #next{
+        padding: 7px;
+      }
+      .btn1{
+        position: relative;
+        top: 15px;
+      }
+      #submit1{
+        padding: 7px;
+      }
+      #goback{
+        left: 20px;
+      }
+      .addon{
+        position: relative;
+        top: 10px;
+      }
+      .pr2{
+        position: relative;
+        top: -15px;
+      }
+      .section4-main{
+        position: relative;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        top: 15px;
+        width: 330px;
+        padding: 10px; 
+        margin-left: 15px;
+        height: 340px;
+      }
+      #confirm{
+        padding: 7px;
+        left: -24px;
+      }
+      #back1{
+        left: 20px;
+      }
+      .section5-main{
+        position: relative;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        top: 15px;
+        width: 330px;
+        padding: 10px; 
+        height: 340px;
+      }
+      .thank{
+        text-align: center;
+      }
+      .icon-thank-you{
+        position: relative;
+        left: 125px;
+      }
+      .thank1{
+        margin-top: 55px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -458,6 +635,7 @@
     </div>
     <div class="div2">
       <div class="section1">
+        <div class="section1-main">
       <div>
         <span> <h2>Personal info</h2><h5>Please provide your name, email address, and phone number.</h5></span>
       </div>
@@ -475,10 +653,11 @@
           <label>Phone Number <br>
             <div id="numbererr">This Field is required</div>
             <input type="number" name="number"class="form1"  id="number" placeholder="e.g. +1 234 567 890"></label></div>
-            <input type="button" name="submit" id="submit1" value="Next Step"><br>
       </form>
-    </div>
+      </div></div>
+      <div><input type="button" name="submit" id="submit1" value="Next Step"><br></div>
     </div><div class="section2">
+      <div class="section2-main">
     <div class="section21">
       <div>
         <span> <h2>Select your plan</h2><h5>You have the option of monthly or yearly billing.</h5></span>
@@ -524,10 +703,12 @@
         <button style="border-radius: 0px 10px 10px 0px;" class="actionBtn yearBtn"></button>
         <label style="padding-left:10px">Yearly</label>
     </div>
-    <div><input type="button" name="submit" id="goback" value="Go Back">
+  </div>
+    <div class="button"><input type="button" name="submit" id="goback" value="Go Back">
           <input type="button" name="submit" id="submit2" value="Next Step"><br></div>
   </div>
     <div class="section31">
+      <div class="section3-main">
       <div>
         <span> <h2>Pick add-ons</h2><h5>Add-ons help enhance gaming experience</h5></span>
       </div>
@@ -536,19 +717,19 @@
           <div><input class="checked"  id="option-1" type="checkbox"></div>
           <label for="option-1"><div class="option">
           <div><span class="addon"><span class="addon1 addon11">Online Service</span><br><span class="addon2">Access to multiplayer games</span></span></div>
-          <div><span class="pr2" style="font-size: small;position: relative;top: -25px; left: 190px;font-weight: bold;color: hsl(243, 100%, 62%);">+$1mo</span></div></div></label>
+          <div><span class="pr2" >+$1mo</span></div></div></label>
         </div>
         <div class="checkbox1 checkbox21">
           <div><input type="checkbox" id="option-2"></div>
           <label for="option-2"> <div class="option">
           <div><span class="addon"><span class="addon1 addon12">Larger Storage</span><br><span class="addon2">Extra 1Tb of cloud save</span></span></div>
-          <div><span class="pr2" style="font-size: small;position: relative;top: -25px; left: 192px;font-weight: bold;color:hsl(243, 100%, 62%);">+$2/mo</span></div></div></label>
+          <div><span class="pr2" >+$2/mo</span></div></div></label>
         </div>
         <div class="checkbox1 checkbox31">
           <div><input type="checkbox" id="option-3"></div>
           <label for="option-3"><div class="option">
           <div><span class="addon"><span class="addon1 addon13">Customizable profile</span><br><span class="addon2">Custom theme on your Profile</span></span></div>
-          <div><span class="pr2" style="font-size: small;position: relative;top: -25px; left: 192px;font-weight: bold;color: hsl(243, 100%, 62%);">+$2/mo</span></div></div></label>
+          <div><span class="pr2" >+$2/mo</span></div></div></label>
         </div>
       </div>
       <div class="section32">
@@ -556,32 +737,34 @@
           <div><input class="checked"  id="option-11" type="checkbox"></div>
           <label for="option-11"><div class="option">
           <div><span class="addon"><span class="addon1 addon14">Online Service</span><br><span class="addon2">Access to multiplayer games</span></span></div>
-          <div><span class="pr2" style="font-size: small;position: relative;top: -25px; left: 190px;font-weight: bold;color: hsl(243, 100%, 62%);">+$10/yr</span></div></div></label>
+          <div><span class="pr2" >+$10/yr</span></div></div></label>
         </div>
         <div class="checkbox1 checkbox22">
           <div><input type="checkbox" id="option-21"></div>
           <label for="option-21"> <div class="option">
           <div><span class="addon"><span class="addon1 addon15">Larger Storage</span><br><span class="addon2">Extra 1Tb of cloud save</span></span></div>
-          <div><span class="pr2" style="font-size: small;position: relative;top: -25px; left: 192px;font-weight: bold;color:hsl(243, 100%, 62%);">+$20/yr</span></div></div></label>
+          <div><span class="pr2" >+$20/yr</span></div></div></label>
         </div>
         <div class="checkbox1 checkbox32">
           <div><input type="checkbox" id="option-31"></div>
           <label for="option-31"><div class="option">
           <div><span class="addon"><span class="addon1 addon16">Customizable profile</span><br><span class="addon2">Custom theme on your Profile</span></span></div>
-          <div><span class="pr2" style="font-size: small;position: relative;top: -25px; left: 192px;font-weight: bold;color: hsl(243, 100%, 62%);">+$20/yr</span></div></div></label>
+          <div><span class="pr2" >+$20/yr</span></div></div></label>
         </div>
   </div>
-  <div>
+</div>
+  <div class="btn1">
     <input type="button" value="Go Back" id="back">
   <input type="button" value="Next Step" id="next">
   </div>
   </div>
   <div class="section4">
+    <div class="section4-main">
   <div>
     <span> <h2>Finishing up</h2><h5>Double-check everything looks OK before confirming</h5></span>
   </div>
   <div class="summary">
-  </div>
+  </div></div>
   <div>
     <div>
       <input type="button" value="Go Back" id="back1">
@@ -590,12 +773,13 @@
 </div>
 </div>
 <div class="section5">
-  <div >
+  <div class="section5-main">
+  <div class="thank1">
     <img class="icon-thank-you" src="/assets/images/icon-thank-you.svg" alt="">
   </div>
   <div class="thank">Thank you!</div>
   <div class="thank-you">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, Please feel free to email us at support@loremgaming.com </div>
-</div>
+</div></div>
 </div>
 </div>
   <div class="attribution">
@@ -767,6 +951,7 @@ function number_verify() {
             checkbox6.classList.remove('checkbox2')
           }
         })
+        const mediaQuery = window.matchMedia('(max-width: 375px)')
         submit1.onclick = function() {
           if (name.value === "") {
             nameerr.style.display = "block";
@@ -785,11 +970,18 @@ function number_verify() {
             number.focus()
           }
           else{
+            if (mediaQuery.matches) {
+            section2.style.top ="-437px"
+            section1.style.top= "-1000px"
+            item11.style.background = "none"
+            item12.style.background = "hsl(228, 100%, 84%)"
+          }else{
           section1.style.top= "-1000px"
           section2.style.top = "-320px"
           item11.style.background = "none"
           item12.style.background = "hsl(228, 100%, 84%)"
-          }
+          }}
+
         }
         goback.onclick = function() {
           section2.style.top= "100px"
@@ -801,6 +993,28 @@ function number_verify() {
           var options = document.getElementsByClassName('price1');
           for (var i = 0; i < options.length; i++) {
             if (options[i].classList.contains('price11')) {
+              if (mediaQuery.matches) {
+          if(moveBtn.classList.contains('rightBtn')){
+          section1.style.top= "-1000px"
+          section2.style.top= "-1000px"
+          section31.style.top="-830px"
+          section32.style.display="grid"
+          section3.style.display="none"
+          item11.style.background = "none"
+          item12.style.background = "none"
+          item13.style.background = "hsl(228, 100%, 84%)"
+          }
+          else{
+          section1.style.top= "-1000px"
+          section2.style.top= "-1000px"
+          section31.style.top="-830px"
+          section32.style.display="none"
+          section3.style.display="grid"
+          item11.style.background = "none"
+          item12.style.background = "none"
+          item13.style.background = "hsl(228, 100%, 84%)"
+          }
+              }else{
         if(moveBtn.classList.contains('rightBtn')){
           section1.style.top= "-1000px"
           section2.style.top= "-1000px"
@@ -820,22 +1034,41 @@ function number_verify() {
           item11.style.background = "none"
           item12.style.background = "none"
           item13.style.background = "hsl(228, 100%, 84%)"
-          }
+          }}
       }else{
 
       }
       }
         }
         back.onclick = function (){
+          if (mediaQuery.matches) {
+          section1.style.top= "-1000px"
+          section2.style.top= "-437px"
+          section31.style.top="100px"
+          item11.style.background = "none"
+          item12.style.background = "hsl(228, 100%, 84%)"
+          item13.style.background = "none" 
+          }else{
           section1.style.top= "-1000px"
           section2.style.top= "-320px"
           section31.style.top="100px"
           item11.style.background = "none"
           item12.style.background = "hsl(228, 100%, 84%)"
-          item13.style.background = "none"
+          item13.style.background = "none" 
+          }
         }
         next.addEventListener('click', ()=>{
           if (checkbox1.classList.contains('checkbox2') || checkbox2.classList.contains('checkbox2') || checkbox3.classList.contains('checkbox2') || checkbox4.classList.contains('checkbox2') || checkbox5.classList.contains('checkbox2') || checkbox6.classList.contains('checkbox2') ) {
+          if (mediaQuery.matches) {
+          section1.style.top= "-1000px"
+          section2.style.top= "-1000px"
+          section31.style.top="-1400px"
+          section4.style.top = "-1210px"
+          item11.style.background = "none"
+          item12.style.background = "none"
+          item13.style.background = "none"
+          item14.style.background = "hsl(228, 100%, 84%)"  
+          }else{
           section1.style.top= "-1000px"
           section2.style.top= "-1000px"
           section31.style.top="-1000px"
@@ -844,11 +1077,8 @@ function number_verify() {
           item12.style.background = "none"
           item13.style.background = "none"
           item14.style.background = "hsl(228, 100%, 84%)"
-          }else{
-            
+          }}else{
           }
-
-
           if(moveBtn.classList.contains('rightBtn')){
             ok1()
           }
@@ -985,6 +1215,32 @@ function number_verify() {
          change()})
 
         back1.addEventListener('click', ()=>{
+          if (mediaQuery.matches) {
+            if(moveBtn.classList.contains('rightBtn')){
+          section1.style.top= "-1000px"
+          section2.style.top= "-1000px"
+          section31.style.top="-830px"
+          section32.style.display="grid"
+          section4.style.top = "150px"
+          section3.style.display="none"
+          item11.style.background = "none"
+          item12.style.background = "none"
+          item13.style.background = "hsl(228, 100%, 84%)"
+          item14.style.background = "none"
+          }
+          else{
+          section1.style.top= "-1000px"
+          section2.style.top= "-1000px"
+          section31.style.top="-830px"
+          section32.style.display="none"
+          section3.style.display="grid"
+          section4.style.top = "150px"
+          item11.style.background = "none"
+          item12.style.background = "none"
+          item13.style.background = "hsl(228, 100%, 84%)"
+          item14.style.background = "none"
+          }
+          }else{
           if(moveBtn.classList.contains('rightBtn')){
           section1.style.top= "-1000px"
           section2.style.top= "-1000px"
@@ -1008,19 +1264,30 @@ function number_verify() {
           item12.style.background = "none"
           item13.style.background = "hsl(228, 100%, 84%)"
           item14.style.background = "none"
-          }
+          }}
         })
         
         confirm.addEventListener('click',()=>{
+          if (mediaQuery.matches) {
+          section1.style.top= "-1000px"
+          section2.style.top= "-1000px"
+          section31.style.top="-1400px"
+          section4.style.top = "0px"
+          section5.style.top = "-1500px"
+          item11.style.background = "none"
+          item12.style.background = "none"
+          item13.style.background = "none"
+          item14.style.background = "hsl(228, 100%, 84%)"
+          }else{
           section1.style.top= "-1000px"
           section2.style.top= "-1000px"
           section31.style.top="-1000px"
-          section4.style.top = "100px"
+          section4.style.top = "0px"
           section5.style.top = "-1165px"
           item11.style.background = "none"
           item12.style.background = "none"
           item13.style.background = "none"
-          item14.style.background = "hsl(228, 100%, 84%)"})
+          item14.style.background = "hsl(228, 100%, 84%)"}})
         
 
         function price111(option) {
