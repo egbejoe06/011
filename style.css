@@ -1,0 +1,620 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color:hsl(217, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.maindiv{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-top:100px;
+  padding: 10px;
+  width: 620px;
+  height: 400px;
+  background-color: white;
+  border-radius:10px;
+}
+.div1{
+  width:195px;
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.div1, span{
+  margin: 1px;
+}
+.div2{
+  width:350px;
+  padding: 5px;
+  margin-left: 10px;
+  position: relative;
+  top: -10px;
+  display: block;
+}
+.step{
+  font-size:12px;
+  color:hsl(231, 11%, 63%);
+}
+.step1{
+  color:hsl(217, 100%, 97%);
+  font-weight: bold;
+  font-size:12px;
+  margin-left: 25px;
+}
+li{
+  padding:5px;
+  border-bottom:1px;
+}
+.form1{
+  width: 340px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid hsl(231, 11%, 63%);
+  margin-top: 5px;
+  cursor: pointer;
+}
+h2{
+  margin:0;
+  color:hsl(213, 96%, 18%);
+}
+h5{
+  margin:0;
+  color:hsl(231, 11%, 63%);
+}
+.div3{
+  margin-top: 15px;
+}
+label{
+  font-size:11px;
+  color:hsl(213, 96%, 18%);
+  margin-top:10px;
+  font-weight: bold;
+}
+#submit1{
+  background-color:hsl(213, 96%, 18%);
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+  color:hsl(229, 24%, 87%);
+  margin-top:10px;
+  cursor: pointer;
+  position: relative;
+  top:30px;
+  left: 265px;
+}
+#submit2{
+  background-color:hsl(213, 96%, 18%);
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+  color:hsl(229, 24%, 87%);
+  margin-top:10px;
+  cursor: pointer;
+  position: relative;
+  top:30px;
+  left: 175px;
+}
+#number::-webkit-inner-spin-button,#number::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+#nameerr,#numbererr,#emailerr{
+  font-size:11px;
+  color:hsl(0, 100%, 74%) ;
+  text-align:end;
+  width: 300px;
+  display:none;
+  margin-top:-15px;
+}
+input{
+  margin-top:10px;
+}
+.labeldiv{
+  margin: 0;
+}
+.section1{
+  position: relative;
+  transition: 1s;
+}
+.price{
+  display: flex;
+  gap:15px;
+  margin-top: 10px;
+}
+.price1{
+  width:100px;
+  height:120px;
+  border: 1px solid ;
+  border-color: hsl(206, 94%, 87%);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.price1:focus{
+  border-color: hsl(213, 96%, 18%);
+  background-color: hsl(206,94%, 87%);
+}
+.price1:hover{
+  border-color: hsl(213, 96%, 18%);
+  border: 1.5px solid hsl(213, 96%, 18%);
+}
+.sub-price1{
+  font-size:13px;
+  position: relative;
+  top: 30px;
+  color:hsl(231, 11%, 63%);
+}
+.sub-price2{
+  width: 330px;
+  background-color:hsl(231, 100%, 99%);
+  position: relative;
+  top: 25px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px;
+  display:flex;
+  justify-content:center;
+}
+.actionBtn{
+  background-color:hsl(213, 96%, 18%);
+  padding: 8px;
+  margin-top:8px;
+  width: 10px;
+  height:10px;
+  outline:none;
+  cursor: pointer;
+  border:0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.moveBtn{
+  margin-top: 10px;
+  position: absolute;
+  padding:0px;
+  border-radius: 10px;
+  border:0;
+  width:10px;
+  height: 10px;
+  outline: none;
+  color:hsl(217, 100%, 97%);
+  transform: translateX(0);
+  transition: all 0.2s ease-in-out;
+}
+.rightBtn{
+  transform: translateX(98%);
+  transition: all 0.2s ease-in-out;
+}
+.section23{
+  display:block;
+}
+.section24{
+  display:none;
+}
+.section22{
+  display:none;
+}
+#goback{
+  background-color:transparent;
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+  color:hsl(231, 11%, 63%);
+  margin-top:10px;
+  cursor: pointer;
+  position: relative;
+  top:30px;
+}
+#goback:hover{
+  color:hsl(213, 96%, 18%);
+}
+.section2{
+  position: relative;
+  top:100px;
+  transition: 1s;
+}
+.section11{
+  display:none;
+}
+.section25{
+  display:block;
+}
+.item1{
+  padding:5px;
+  border: 1px solid hsl(229, 24%, 87%);
+  margin-top: 10px;
+  border-radius:50px;
+  position: relative;
+  top: 10px;
+  transition: 1s;
+}
+.item2{
+  margin-top:20px;
+  margin-left: 20px;
+}
+.item11{
+  background-color: hsl(228, 100%, 84%);
+}
+.section3{
+  position: relative;
+  display: grid;
+  gap: 10px;
+  transition: 1s;
+}
+.checkbox1{
+  display: flex;
+  width: 300px;
+  height: 61px;
+  padding: 5px;
+  padding-left: 20px;
+  border: 1px solid hsl(213, 96%, 18%);
+  border-radius: 5px;
+}
+.addon{
+  margin-left: 20px;
+}
+.addon1{
+  font-size: 16px;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+.addon2{
+  font-size: 12px;
+  margin-left: 20px;
+  color:hsl(231, 11%, 63%)
+}
+#next{
+  float: right;
+  background-color:hsl(213, 96%, 18%);
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+  color:hsl(229, 24%, 87%);
+  margin-top:10px;
+  position: relative;
+  left: -19px;
+  cursor: pointer;
+}
+#back{
+  background-color:transparent;
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+  color:hsl(231, 11%, 63%);
+  margin-top:10px;
+  cursor: pointer;
+}
+#back:hover{
+  color:hsl(213, 96%, 18%);
+}
+.section31{
+  margin-left: 20px;
+}
+.section31{
+  position: relative;
+  top:100px;
+  transition: 1s;
+}
+.price11{
+  background-color: hsl(229, 24%, 87%);
+  border-color: hsl(243, 100%, 62%);
+}
+.option{
+  width: 250px;
+  position: relative;
+  top: -5px;
+  cursor: pointer;
+  height: 50px;
+}
+.section32{
+  display: grid;
+  gap: 10px;
+  transition: 1s;
+  position: relative;
+}
+.checkbox2{
+  display: flex;
+  width: 300px;
+  height: 61px;
+  padding: 5px;
+  padding-left: 20px;
+  background-color: hsl(231, 100%, 99%);
+  border: 1px solid hsl(243, 100%, 62%);
+  border-radius: 5px;
+}
+.section4{
+  position: relative;
+  transition: 1s;
+  top: 150px;
+}
+.summary-1{
+  background-color: hsl(217, 100%, 97%);
+  padding: 20px;
+  border-radius: 5px;
+}
+.summary-main{
+  padding-bottom: 10px;
+}
+.summary-mainmain{
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+.summary-mainprice{
+  float: right;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+.change{
+  font-size: small;
+  color: hsl(231, 11%, 63%);
+  cursor: pointer;
+}
+.change:hover{
+  color: hsl(243, 100%, 62%);
+}
+.summary-sub{
+  padding-top: 10px;
+}
+.summary-sub1,.summary-sub2,.summary-sub3{
+  padding-bottom: 5px;
+  font-size: small;
+  color: hsl(231, 11%, 63%);
+}
+.summary-subprice1,.summary-subprice2,.summary-subprice3{
+  float: right;
+  font-size: small;
+  color: hsl(213, 96%, 18%);
+}
+.total{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 16px;
+  font-size: small;
+}
+.totalmain{
+  color: hsl(231, 11%, 63%);
+}
+.totalprice{
+  float: right;
+  font-size: medium;
+  color: hsl(243, 100%, 62%);
+  font-weight: bold;
+}
+#back1{
+  background-color:transparent;
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+  color:hsl(231, 11%, 63%);
+  margin-top:10px;
+  cursor: pointer;
+  position: relative;
+  top:30px;
+}
+#confirm{
+  float: right;
+  width: 80px;
+  background-color:hsl(243, 100%, 62%);
+  padding: 10px;
+  border: none;
+  border-radius:5px;
+  color:hsl(229, 24%, 87%);
+  margin-top:10px;
+  position: relative;
+  left: 77px;
+  top: 30px;
+  cursor: pointer;
+}
+.section5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 110px;
+  transition: 1s;
+}
+.icon-thank-you{
+  width: 50px;
+  position: relative;
+  left: 135px;
+}
+.thank{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.thank-you{
+  color: hsl(231, 11%, 63%);
+  font-size: small;
+  text-align: center;
+}
+.pr2{
+font-size: small;
+position: relative;
+top: -25px;
+left: 190px;
+font-weight: bold;
+color: hsl(243, 100%, 62%);
+}
+@media(max-width:375px){
+  .maindiv{
+    flex-direction: column;
+    width: 370px;
+    padding: 0;
+    height: 480px;
+  }
+  .div1{
+    padding: 50px;
+    flex-direction: row;
+    background-image: url(./assets/images/bg-sidebar-mobile.svg);
+    width: auto;
+    background-size: cover;
+  }
+  .step{
+    display: none;
+  }
+  .step1{
+    display: none;
+  }
+  .item2{
+    margin-left: 10px;
+    position: relative;
+    top: -45px;
+    left: 51px;
+  }
+  body{
+    margin: -80px;
+  }
+  .section1-main{
+    position: relative;
+    top: -55px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    margin-left: 15px;
+    width: 330px;
+    padding: 10px;
+    height: 340px;
+  }
+  .form1{
+    width: 300px;
+  }
+  .div3{
+    margin-top: -5px;
+  }
+  #submit1{
+    top: -50px;
+    left: 267px;
+    margin-top: 0;
+  }
+  #submit2{
+    top: 5px;
+  }
+  .section1{
+    background-color: hsl(231, 100%, 99%);
+  }
+  .div2{
+    width: auto;
+    margin-left: 0;
+    position: relative;
+    padding: 0;
+    background-color: hsl(231, 100%, 99%);;
+  }
+  .price{
+    flex-direction: column;
+    position: relative;
+    top: -22px;
+  }
+  .price1{
+    position: relative;
+    top: 10px;
+    height: 55px;
+    width: 300px;
+  }
+  .sub-price1{
+   top: -37px;
+   left: 45px;
+  }
+  .sub-price2{
+    top: -8px;
+    width: 300px;
+  }
+  .button{
+    position: relative;
+  }
+  .section2-main{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    margin-left: 15px;
+    width: 330px;
+    padding: 10px;
+    height: 340px;
+  }
+  label{
+    margin-top: 5px;
+  }
+  .actionBtn{
+    margin-top: 5px;
+    width: 20px;
+  }
+  .moveBtn{
+    margin-top: 5px;
+    top: 7px;
+  }
+  .section3-main{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    top: 15px;
+    width: 330px;
+    padding: 10px;
+    height: 340px;
+  }
+  #next{
+    padding: 7px;
+  }
+  .btn1{
+    position: relative;
+    top: 15px;
+  }
+  #submit1{
+    padding: 7px;
+  }
+  #goback{
+    left: 20px;
+    top: 7px;
+  }
+  .addon{
+    position: relative;
+    top: 10px;
+  }
+  .pr2{
+    position: relative;
+    top: -15px;
+  }
+  .section4-main{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    top: 15px;
+    width: 330px;
+    padding: 10px; 
+    margin-left: 15px;
+    height: 340px;
+  }
+  #confirm{
+    padding: 7px;
+    left: -24px;
+  }
+  #back1{
+    left: 20px;
+  }
+  .section5-main{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    top: 15px;
+    width: 330px;
+    padding: 10px; 
+    height: 340px;
+  }
+  .thank{
+    text-align: center;
+  }
+  .icon-thank-you{
+    position: relative;
+    left: 125px;
+  }
+  .thank1{
+    margin-top: 55px;
+  }
+}
